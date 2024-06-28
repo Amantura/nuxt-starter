@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  caps-platform-warehouse:
+    container_name: caps-platform-warehouse
+    build: ./
+    ports:
+      - 3004:3004
+    command: ["npm", "run", "preview"]
+    env_file:
+      - ./.env
+    restart: always
+    networks:
+      - network_for_app
+
+networks:
+  network_for_app:
+    name: network_for_all

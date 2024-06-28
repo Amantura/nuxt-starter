@@ -19,6 +19,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/harlem',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@element-plus/nuxt',
+    'unplugin-icons/nuxt'
   ]
 })
