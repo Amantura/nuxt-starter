@@ -20,5 +20,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/harlem',
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+
+  compatibilityDate: '2024-07-12',
 })
